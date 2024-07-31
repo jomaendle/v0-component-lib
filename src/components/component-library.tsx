@@ -197,17 +197,8 @@ export function ComponentLibrary() {
         <h2 className="text-3xl font-bold">Tooltips</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <TooltipProvider>
-            <Tooltip content="This is a tooltip">
+            <Tooltip>
               <Button>Hover for Tooltip</Button>
-            </Tooltip>
-            <Tooltip content="This is a tooltip" side="right">
-              <Button>Tooltip on Right</Button>
-            </Tooltip>
-            <Tooltip content="This is a tooltip" side="bottom">
-              <Button>Tooltip on Bottom</Button>
-            </Tooltip>
-            <Tooltip content="This is a tooltip" side="left">
-              <Button>Tooltip on Left</Button>
             </Tooltip>
           </TooltipProvider>
         </div>
@@ -225,7 +216,7 @@ export function ComponentLibrary() {
           </div>
           <div className="space-y-2">
             <Label htmlFor="input-3">Select</Label>
-            <Select id="input-3">
+            <Select>
               <SelectTrigger>
                 <SelectValue placeholder="Select an option" />
               </SelectTrigger>
